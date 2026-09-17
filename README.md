@@ -1,6 +1,6 @@
-# Muhammad Arif — Digital & Social Media Strategist
+# Muhammad Arif Kamboh— Digital & Social Media Strategist
 
-Portfolio website of **Muhammad Arif** — Digital & Social Media Strategist | SEO & AI Search Specialist based in Kassowal, Punjab, Pakistan.
+Portfolio website of **Muhammad Arif Kamboh** — Digital & Social Media Strategist | SEO & AI Search Specialist based in Kassowal, Punjab, Pakistan.
 
 🌐 **Live site:** [https://kamboh6692.github.io](https://kamboh6692.github.io)
 
@@ -67,4 +67,4 @@ Meta Ads · Google Ads · TikTok Ads · DV360 · The Trade Desk · Amazon DSP ·
 
 ## License
 
-© 2026 Muhammad Arif. All rights reserved.
+© 2026 Muhammad Arif Kamboh. All rights reserved.
