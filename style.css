@@ -313,3 +313,82 @@ body{
   .hero-metrics{grid-template-columns:1fr;gap:10px}
   .photo-frame{width:180px;height:180px}
 }
+/* ============ SKILLS SECTION ============ */
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  margin-top:44px;
+}
+
+.skills-card{
+  background:#fff;
+  border:1px solid var(--line-soft);
+  border-radius:14px;
+  padding:24px 22px;
+  box-shadow:0 4px 12px rgba(15,23,42,0.04);
+  transition:all 0.3s;
+}
+
+.skills-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 36px rgba(15,23,42,0.09);
+  border-color:var(--teal);
+}
+
+.skills-card h3{
+  font-family:"Montserrat",sans-serif;
+  font-size:0.95rem;
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:16px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding-bottom:12px;
+  border-bottom:2px solid var(--line-soft);
+}
+
+.skills-card h3 i{
+  color:var(--teal);
+  font-size:1.05rem;
+}
+
+/* ============ FAQ SECTION ============ */
+.faq-wrap{
+  max-width:820px;
+  margin-top:44px;
+}
+
+.faq-wrap h3{
+  font-family:"Montserrat",sans-serif;
+  font-size:1.1rem;
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:10px;
+  margin-top:28px;
+  padding-left:16px;
+  border-left:3px solid var(--teal);
+  line-height:1.4;
+}
+
+.faq-wrap h3:first-child{margin-top:0;}
+
+.faq-wrap p{
+  color:var(--slate);
+  line-height:1.75;
+  font-size:1rem;
+  margin-bottom:8px;
+  padding-left:19px;
+}
+
+/* ============ RESPONSIVE — SKILLS ============ */
+@media (max-width:960px){
+  .skills-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media (max-width:560px){
+  .skills-grid{grid-template-columns:1fr;}
+  .faq-wrap h3{font-size:1rem;}
+  .faq-wrap p{font-size:0.95rem;}
+}
