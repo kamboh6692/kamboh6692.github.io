@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Muhammad Arif Kamboh | Full-Stack Digital Growth Strategist</title>
+<meta name="description" content="Professional CV of Muhammad Arif Kamboh — Full-Stack Digital Growth Strategist with 9+ years experience across 100+ clients in 10+ countries.">
+<meta name="author" content="Muhammad Arif Kamboh">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="43Pnc2qy6EpNwdx1dHvTwEOs_uYkRiVSeJNWoKQPgRE" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+.cv-hero{padding:50px 50px 40px;background:linear-gradient(135deg,#0A1628 0%,#1E1B4B 50%,#164E63 100%);color:#fff;position:relative;overflow:hidden}
+.cv-hero::before{content:"";position:absolute;top:-100px;right:-80px;width:380px;height:380px;border:40px solid rgba(20,184,166,0.10);border-radius:50%;pointer-events:none}
+.cv-hero-inner{position:relative;z-index:2;max-width:900px}
+.cv-hero h1{font-family:"Fraunces",Georgia,serif;font-size:2.4rem;font-weight:700;line-height:1.1;letter-spacing:-0.5px;margin-bottom:8px;color:#fff}
+.cv-hero h1 span{background:linear-gradient(90deg,#D4AF37,#14B8A6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.cv-hero .subtitle{font-family:"Montserrat",sans-serif;font-size:1rem;font-weight:600;color:#5EEAD4;letter-spacing:0.05em;margin-bottom:16px}
+.cv-hero .contact-row{display:flex;flex-wrap:wrap;gap:16px;font-size:0.88rem;color:#CBD5E1}
+.cv-hero .contact-row a{color:#CBD5E1;text-decoration:none;display:flex;align-items:center;gap:6px;transition:color 0.2s}
+.cv-hero .contact-row a:hover{color:#5EEAD4}
+.cv-hero .contact-row i{color:#14B8A6}
+.section-title{font-family:"Fraunces",Georgia,serif;font-size:1.7rem;font-weight:600;color:#0A1628;margin-bottom:14px;letter-spacing:-0.3px;display:flex;align-items:center;gap:14px;padding-bottom:8px;border-bottom:2px solid #F1F5F9}
+.section-title i{color:#0D9488;font-size:1.35rem}
+.why-inhouse{background:linear-gradient(135deg,#F0FDFA,#FEFCF8);border-left:4px solid #14B8A6;border-radius:0 12px 12px 0;padding:24px 28px;margin:28px 0}
+.why-inhouse h3{font-family:"Montserrat",sans-serif;font-size:0.95rem;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;color:#0D9488;margin-bottom:10px}
+.why-inhouse p{margin:0;font-size:1rem;color:#0A1628;line-height:1.75}
+.skills-grid{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tag{display:inline-block;padding:6px 14px;font-size:0.82rem;font-weight:500;border-radius:20px;line-height:1.4}
+.tag.teal{background:#CCFBF1;color:#0F766E;border:1px solid #99F6E4}
+.tag.blue{background:#DBEAFE;color:#1E40AF;border:1px solid #BFDBFE}
+.tag.gold{background:#FEF3C7;color:#92400E;border:1px solid #FDE68A}
+.tag.purple{background:#EDE9FE;color:#5B21B6;border:1px solid #DDD6FE}
+.tag.green{background:#DCFCE7;color:#166534;border:1px solid #BBF7D0}
+.tag.rose{background:#FFE4E6;color:#9F1239;border:1px solid #FECDD3}
+.tag.gray{background:#F1F5F9;color:#334155;border:1px solid #E2E8F0}
+.sub-heading{font-family:"Montserrat",sans-serif;font-size:0.85rem;font-weight:700;color:#0A1628;text-transform:uppercase;letter-spacing:0.06em;margin:18px 0 8px}
+.cv-exp-item{background:#fff;border-left:4px solid #0D9488;border-radius:0 14px 14px 0;padding:24px 28px;margin-bottom:18px;box-shadow:0 4px 12px rgba(15,23,42,0.04);transition:all 0.3s}
+.cv-exp-item:hover{transform:translateX(4px);box-shadow:0 12px 32px rgba(15,23,42,0.09)}
+.cv-exp-header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.cv-exp-header h3{font-family:"Fraunces",Georgia,serif;font-size:1.15rem;font-weight:600;color:#0A1628;line-height:1.3}
+.cv-exp-date{font-family:"Montserrat",sans-serif;font-size:0.72rem;font-weight:700;color:#0F766E;background:#CCFBF1;padding:4px 12px;border-radius:20px;white-space:nowrap}
+.cv-exp-company{font-size:0.88rem;font-weight:600;color:#475569;margin-bottom:14px}
+.cv-exp-list{list-style:none;padding:0}
+.cv-exp-list li{position:relative;padding-left:20px;margin-bottom:6px;font-size:0.94rem;line-height:1.65;color:#475569}
+.cv-exp-list li::before{content:"\f105";font-family:"Font Awesome 6 Free";font-weight:900;position:absolute;left:0;color:#0D9488;font-size:0.9rem}
+.cv-exp-list strong{color:#0A1628;font-weight:600}
+.edu-item{background:#fff;border-radius:12px;padding:20px 24px;margin-bottom:14px;border:1px solid #F1F5F9;box-shadow:0 3px 10px rgba(15,23,42,0.03)}
+.edu-item h4{font-family:"Montserrat",sans-serif;font-size:1rem;font-weight:700;color:#0A1628;margin-bottom:4px}
+.edu-item p{font-size:0.9rem;color:#475569}
+.cv-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px}
+.cv-metric{background:linear-gradient(135deg,#0A1628,#1E40AF);border-radius:12px;padding:20px;text-align:center;color:#fff}
+.cv-metric .num{font-family:"Fraunces",serif;font-size:1.7rem;font-weight:700;color:#5EEAD4;line-height:1;margin-bottom:6px}
+.cv-metric .lbl{font-family:"Montserrat",sans-serif;font-size:0.68rem;font-weight:600;color:#CBD5E1;text-transform:uppercase;letter-spacing:0.06em}
+.ind-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.ind-chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;font-family:"Montserrat",sans-serif;font-size:0.78rem;font-weight:600;background:#fff;border:1px solid #E2E8F0;border-radius:20px;color:#0A1628}
+.ind-chip i{color:#0D9488;font-size:0.8rem}
+.services-cta{margin-top:48px;padding:36px 40px;background:linear-gradient(135deg,#0A1628 0%,#1E40AF 130%);border-radius:16px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.services-cta h3{font-family:"Fraunces",Georgia,serif;font-size:1.35rem;font-weight:600;color:#D4AF37;margin-bottom:8px}
+.services-cta p{font-size:0.95rem;color:#CBD5E1;line-height:1.6}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:10px;font-family:"Inter",sans-serif;font-weight:600;font-size:0.95rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:all 0.2s}
+.btn-primary{background:linear-gradient(135deg,#0D9488,#14B8A6);color:#fff;box-shadow:0 8px 20px rgba(13,148,136,0.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(13,148,136,0.5)}
+@media (max-width:1100px){.cv-hero{padding:44px 30px 36px}.cv-hero h1{font-size:2rem}.cv-metrics{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:768px){.cv-hero{padding:36px 22px 30px}.cv-hero h1{font-size:1.7rem}.cv-exp-header{flex-direction:column;gap:6px}.cv-metrics{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <div class="profile-block">
+        <div class="profile-photo"><img src="photo.jpg" alt="Muhammad Arif Kamboh" onerror="this.parentNode.innerHTML='<span class=\'photo-initials\'>MAK</span>'"></div>
+        <h1 class="profile-name">Muhammad Arif Kamboh</h1>
+        <p class="profile-title">Full-Stack Digital Growth Studio</p>
+        <p class="profile-subtitle">SEO &amp; AI Search Specialist</p>
+      </div>
+      <div class="sidebar-contact">
+        <a href="mailto:kamboh6692@yahoo.com"><i class="fa-solid fa-envelope"></i><span>kamboh6692@yahoo.com</span></a>
+        <a href="tel:+923136692066"><i class="fa-solid fa-phone"></i><span>+92-313-6692066</span></a>
+        <a href="https://wa.me/923014491563" target="_blank"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+        <a href="https://linkedin.com/in/kamboh6692" target="_blank"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+        <span class="contact-loc"><i class="fa-solid fa-location-dot"></i><span>Kassowal, Punjab, PK</span></span>
+      </div>
+      <nav class="sidebar-nav">
+        <h4>Agency</h4>
+        <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+        <a href="contact.html"><i class="fa-solid fa-paper-plane"></i>Contact</a>
+        <h4 style="margin-top:18px">Services</h4>
+        <a href="services.html"><i class="fa-solid fa-handshake"></i>All Services</a>
+        <a href="service-digital-marketing.html"><i class="fa-solid fa-chart-line"></i>Digital Marketing</a>
+        <a href="service-social-media.html"><i class="fa-solid fa-share-nodes"></i>Social Media</a>
+        <a href="service-paid-ads.html"><i class="fa-solid fa-bullhorn"></i>Paid Ads</a>
+        <a href="service-seo.html"><i class="fa-solid fa-magnifying-glass"></i>SEO &amp; SEM</a>
+        <a href="service-email-marketing.html"><i class="fa-solid fa-envelope"></i>Email Marketing</a>
+        <a href="service-analytics-cro.html"><i class="fa-solid fa-chart-simple"></i>Analytics &amp; CRO</a>
+        <a href="service-programmatic-dsp.html"><i class="fa-solid fa-diagram-project"></i>Programmatic &amp; DSP</a>
+        <a href="service-marketing-strategy.html"><i class="fa-solid fa-compass"></i>Marketing Strategy</a>
+        <h4 style="margin-top:18px">AI Search 2030</h4>
+        <a href="ai-search.html"><i class="fa-solid fa-robot"></i>AI Search Hub</a>
+        <a href="aeo.html"><i class="fa-solid fa-comments"></i>AEO</a>
+        <a href="geo.html"><i class="fa-solid fa-wand-magic-sparkles"></i>GEO</a>
+        <a href="aio.html"><i class="fa-solid fa-microchip"></i>AIO</a>
+        <a href="gxo.html"><i class="fa-solid fa-brain"></i>GXO</a>
+        <h4 style="margin-top:18px">Work</h4>
+        <a href="case-studies.html"><i class="fa-solid fa-folder-open"></i>Case Studies</a>
+        <a href="cv.html" style="color:#5EEAD4"><i class="fa-solid fa-file-lines"></i>View CV</a>
+      </nav>
+      <div class="sidebar-langs"><h4>Languages</h4><div class="lang-pills"><span>Urdu</span><span>Hindi</span><span>Punjabi</span><span>English</span><span>Arabic (Basic)</span></div></div>
+      <div class="sidebar-avail"><h4>Availability</h4><p><strong>Status:</strong> Full-time freelance, immediate</p><p><strong>Mode:</strong> Remote · On-site · Hybrid</p><p><strong>Relocation:</strong> Willing for right role</p><p><strong>Engagement:</strong> Project · Retainer · Long-term</p></div>
+    </div>
+  </aside>
+  <main class="main">
+
+    <section class="cv-hero">
+      <div class="cv-hero-inner">
+        <h1>Muhammad Arif Kamboh — <span>Full-Stack Digital Growth Strategist</span></h1>
+        <p class="subtitle">SEO &amp; AI Search Specialist | 9+ Years Experience | Available for In-House Roles</p>
+        <div class="contact-row">
+          <a href="mailto:kamboh6692@yahoo.com"><i class="fa-solid fa-envelope"></i> kamboh6692@yahoo.com</a>
+          <a href="tel:+923136692066"><i class="fa-solid fa-phone"></i> +92-313-6692066</a>
+          <a href="https://linkedin.com/in/kamboh6692" target="_blank"><i class="fa-brands fa-linkedin"></i> /in/kamboh6692</a>
+          <a href="https://kamboh6692.github.io" target="_blank"><i class="fa-solid fa-globe"></i> kamboh6692.github.io</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:40px">
+
+      <h2 class="section-title"><i class="fa-solid fa-user-tie"></i>Professional Profile</h2>
+      <p style="color:#475569;line-height:1.8;font-size:1.02rem;margin-bottom:14px;">Versatile Full-Stack Digital Growth Strategist combining <strong>18+ years of computer, data, and IT experience</strong> with <strong>9+ years of performance marketing</strong>. Expert in Social Media Growth, Paid Media Scaling, Technical SEO, WordPress, and emerging AI Search (AEO/GEO/AIO/GXO). Worked with <strong>100+ clients across 10+ countries</strong>. Managed <strong>$500k+ in ad budgets across 30+ networks</strong>. Team leader for 10–20 people.</p>
+      <p style="color:#475569;line-height:1.8;font-size:1.02rem;margin-bottom:14px;">Industry experience spans <strong>Construction, Manufacturing, Food, Retail, Fashion, FMCG, E-commerce, SaaS, Health, Finance, Education, and Real Estate</strong>.</p>
+
+      <div class="why-inhouse">
+        <h3><i class="fa-solid fa-building"></i> Why I Am Seeking an In-House Role</h3>
+        <p>After 9+ years of freelance success across 100+ clients in diverse industries, I am seeking an in-house role to deeply focus on one brand's long-term culture, operational alignment, and sustainable growth. Freelance gave me breadth; in-house gives me depth. I bring the hands-on execution skills of a specialist combined with the leadership experience of a manager — ready to hit the ground running.</p>
+      </div>
+
+      <h2 class="section-title" style="margin-top:40px"><i class="fa-solid fa-bolt"></i>Core Competencies</h2>
+
+      <p class="sub-heading">Social Media</p>
+      <div class="skills-grid">
+        <span class="tag teal">SMM</span><span class="tag teal">SMO</span><span class="tag teal">Community Mgmt</span><span class="tag teal">Content Strategy</span><span class="tag teal">Content Creation</span><span class="tag teal">A/B Testing</span><span class="tag teal">Pinterest</span><span class="tag teal">Threads</span>
+      </div>
+
+      <p class="sub-heading">SEO &amp; Search</p>
+      <div class="skills-grid">
+        <span class="tag purple">SEO</span><span class="tag purple">SXO</span><span class="tag purple">AIO</span><span class="tag purple">AEO</span><span class="tag purple">GEO</span><span class="tag purple">GXO</span><span class="tag purple">SERP Analysis</span><span class="tag purple">Keyword Research</span><span class="tag purple">Link Building</span><span class="tag purple">Technical SEO</span><span class="tag purple">E-E-A-T</span><span class="tag purple">Core Web Vitals</span>
+      </div>
+
+      <p class="sub-heading">Paid Advertising</p>
+      <div class="skills-grid">
+        <span class="tag gold">Meta Ads</span><span class="tag gold">Google Ads</span><span class="tag gold">TikTok Ads</span><span class="tag gold">Pinterest Ads</span><span class="tag gold">PropellerAds</span><span class="tag gold">ClickAdU</span><span class="tag gold">Adsterra</span><span class="tag gold">AdCash</span><span class="tag gold">Popunder</span><span class="tag gold">Push Ads</span><span class="tag gold">Native</span><span class="tag gold">Display</span>
+      </div>
+
+      <p class="sub-heading">Programmatic &amp; DSP</p>
+      <div class="skills-grid">
+        <span class="tag gray">DV360</span><span class="tag gray">Trade Desk</span><span class="tag gray">Amazon DSP</span><span class="tag gray">Xandr</span><span class="tag gray">MediaMath</span><span class="tag gray">StackAdapt</span><span class="tag gray">GAM</span><span class="tag gray">OpenX</span><span class="tag gray">PubMatic</span>
+      </div>
+
+      <p class="sub-heading">AI &amp; Emerging</p>
+      <div class="skills-grid">
+        <span class="tag green">LLM Tools</span><span class="tag green">Generative AI</span><span class="tag green">Prompt Engineering</span><span class="tag green">AI Video</span><span class="tag green">ChatGPT</span><span class="tag green">Claude</span><span class="tag green">DeepSeek</span><span class="tag green">Kimi</span><span class="tag green">Gemini</span><span class="tag green">Share of Model</span>
+      </div>
+
+      <p class="sub-heading">Analytics &amp; CRM</p>
+      <div class="skills-grid">
+        <span class="tag blue">GA4</span><span class="tag blue">GSC</span><span class="tag blue">GTM</span><span class="tag blue">Looker Studio</span><span class="tag blue">Hotjar</span><span class="tag blue">MS Clarity</span><span class="tag blue">Meta Insights</span><span class="tag blue">Klaviyo</span><span class="tag blue">Mailchimp</span><span class="tag blue">Brevo</span><span class="tag blue">HubSpot</span>
+      </div>
+
+      <h2 class="section-title" style="margin-top:40px"><i class="fa-solid fa-briefcase"></i>Professional Experience</h2>
+
+      <div class="cv-exp-item">
+        <div class="cv-exp-header"><h3>Freelance Digital &amp; Social Media Strategist</h3><span class="cv-exp-date">2016 – Present</span></div>
+        <p class="cv-exp-company">Self-Employed · Remote — Global</p>
+        <ul class="cv-exp-list">
+          <li>Managed social media across Meta, TikTok, YouTube, X, LinkedIn, Reddit, Quora &amp; Pinterest — grew <strong>250k+ followers</strong></li>
+          <li>Built content calendars, community engagement &amp; A/B tested formats, captions, posting times</li>
+          <li>Email marketing &amp; automation — campaigns, welcome flows, drip, cart abandonment</li>
+          <li>SEO, SEM, SXO, AEO, GEO, AIO, GXO — technical SEO, keyword research, link building, schema graphs</li>
+          <li>Managed <strong>$500k+ ad spend</strong> across Meta, Google, TikTok &amp; 30+ networks — CPC, CPM, CPA, CPS, RevShare</li>
+          <li>Programmatic &amp; DSP: DV360, Trade Desk, Amazon DSP, Xandr, MediaMath, GAM, OpenX, PubMatic</li>
+          <li>Managed teams of <strong>10–20</strong>; silent partner for agencies and firms</li>
+          <li>Delivered campaigns for <strong>Construction, Manufacturing, Food, Retail, Fashion, FMCG</strong>, E-commerce, and SaaS brands</li>
+        </ul>
+      </div>
+
+      <div class="cv-exp-item">
+        <div class="cv-exp-header"><h3>Construction Supervisor &amp; English-Urdu Translator</h3><span class="cv-exp-date">2014 – 2016</span></div>
+        <p class="cv-exp-company">China State Construction Engineering Corp · Saudi Arabia</p>
+        <ul class="cv-exp-list">
+          <li>Supervised multinational site teams; real-time English-Urdu translation</li>
+          <li>Managed daily site logs, workforce coordination, safety compliance</li>
+        </ul>
+      </div>
+
+      <div class="cv-exp-item">
+        <div class="cv-exp-header"><h3>Data Entry Operator (SAP)</h3><span class="cv-exp-date">2013 – 2014</span></div>
+        <p class="cv-exp-company">Shehbaz Garments (Medas Safety) · Pakistan</p>
+        <ul class="cv-exp-list">
+          <li>Worked on <strong>SAP</strong> for machine maintenance schedules, inventory &amp; production data</li>
+          <li>Managed stock records, maintenance plans &amp; daily reporting</li>
+        </ul>
+      </div>
+
+      <div class="cv-exp-item">
+        <div class="cv-exp-header"><h3>Computer Operator &amp; QC Supervisor</h3><span class="cv-exp-date">2008 – 2012</span></div>
+        <p class="cv-exp-company">MTM Masood Textile Mills · Pakistan</p>
+        <ul class="cv-exp-list">
+          <li>Worked on custom <strong>ERP systems</strong> — Inventory, Store, Yarn, Fabric Management</li>
+          <li>Supervised <strong>Quality Control</strong> — inspected fabric quality &amp; production output</li>
+          <li>Data processing, inventory reporting with 99%+ accuracy</li>
+        </ul>
+      </div>
+
+      <h2 class="section-title" style="margin-top:40px"><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+      <div class="edu-item">
+        <h4>Bachelor of Arts (B.A.) — Economics &amp; Muslim World</h4>
+        <p>Allama Iqbal Open University (AIOU) · 2008 – 2011</p>
+      </div>
+
+      <h2 class="section-title" style="margin-top:40px"><i class="fa-solid fa-industry"></i>Industries Served</h2>
+      <div class="ind-chips">
+        <span class="ind-chip"><i class="fa-solid fa-helmet-safety"></i>Construction</span>
+        <span class="ind-chip"><i class="fa-solid fa-industry"></i>Manufacturing</span>
+        <span class="ind-chip"><i class="fa-solid fa-utensils"></i>Food</span>
+        <span class="ind-chip"><i class="fa-solid fa-store"></i>Retail</span>
+        <span class="ind-chip"><i class="fa-solid fa-shirt"></i>Fashion</span>
+        <span class="ind-chip"><i class="fa-solid fa-boxes-stacked"></i>FMCG</span>
+        <span class="ind-chip"><i class="fa-solid fa-cart-shopping"></i>E-commerce</span>
+        <span class="ind-chip"><i class="fa-solid fa-cloud"></i>SaaS</span>
+        <span class="ind-chip"><i class="fa-solid fa-heart-pulse"></i>Health</span>
+        <span class="ind-chip"><i class="fa-solid fa-coins"></i>Finance</span>
+        <span class="ind-chip"><i class="fa-solid fa-graduation-cap"></i>Education</span>
+        <span class="ind-chip"><i class="fa-solid fa-house"></i>Real Estate</span>
+      </div>
+
+      <h2 class="section-title" style="margin-top:40px"><i class="fa-solid fa-chart-simple"></i>Key Metrics</h2>
+      <div class="cv-metrics">
+        <div class="cv-metric"><div class="num">9+</div><div class="lbl">Years Experience</div></div>
+        <div class="cv-metric"><div class="num">100+</div><div class="lbl">Clients Worldwide</div></div>
+        <div class="cv-metric"><div class="num">$500k+</div><div class="lbl">Ad Spend Managed</div></div>
+        <div class="cv-metric"><div class="num">30+</div><div class="lbl">Ad Networks</div></div>
+      </div>
+
+      <div class="services-cta">
+        <div><h3>Ready to Discuss This Role?</h3><p>Available for interviews at your convenience. Let's talk about how I can bring value to your team.</p></div>
+        <a href="contact.html" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+      </div>
+
+    </section>
+
+    <footer class="footer"><p>&copy; 2026 Muhammad Arif Kamboh &middot; Full-Stack Digital Growth Studio</p><p>Kassowal, Punjab, Pakistan &middot; Available Worldwide</p></footer>
+  </main>
+</div>
+</body>
+</html>
