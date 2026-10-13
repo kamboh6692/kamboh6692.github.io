@@ -24,6 +24,71 @@
 .cv-hero .contact-row a{color:#CBD5E1;text-decoration:none;display:flex;align-items:center;gap:6px;transition:color 0.2s}
 .cv-hero .contact-row a:hover{color:#5EEAD4}
 .cv-hero .contact-row i{color:#14B8A6}
+
+/* CTA Row */
+.cv-cta-row{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:24px;
+  position:relative;
+  z-index:2;
+}
+.btn-pdf{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 28px;
+  border-radius:12px;
+  font-family:"Montserrat",sans-serif;
+  font-weight:700;
+  font-size:0.92rem;
+  letter-spacing:0.03em;
+  text-decoration:none;
+  cursor:pointer;
+  transition:all 0.3s;
+  border:2px solid transparent;
+}
+.btn-pdf-primary{
+  background:linear-gradient(135deg,#D4AF37,#FBBF24);
+  color:#0A1628;
+  box-shadow:0 8px 24px rgba(212,175,55,0.4);
+}
+.btn-pdf-primary:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 32px rgba(212,175,55,0.55);
+}
+.btn-pdf-primary i{
+  font-size:1.05rem;
+}
+.btn-pdf-secondary{
+  background:rgba(94,234,212,0.10);
+  color:#5EEAD4;
+  border:2px solid rgba(94,234,212,0.35);
+  backdrop-filter:blur(8px);
+}
+.btn-pdf-secondary:hover{
+  background:rgba(94,234,212,0.18);
+  border-color:#5EEAD4;
+  transform:translateY(-3px);
+}
+.pdf-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:4px 10px;
+  font-family:"Montserrat",sans-serif;
+  font-size:0.66rem;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  background:rgba(212,175,55,0.2);
+  color:#FBBF24;
+  border:1px solid rgba(212,175,55,0.4);
+  border-radius:20px;
+  margin-left:4px;
+}
+
 .section-title{font-family:"Fraunces",Georgia,serif;font-size:1.7rem;font-weight:600;color:#0A1628;margin-bottom:14px;letter-spacing:-0.3px;display:flex;align-items:center;gap:14px;padding-bottom:8px;border-bottom:2px solid #F1F5F9}
 .section-title i{color:#0D9488;font-size:1.35rem}
 .why-inhouse{background:linear-gradient(135deg,#F0FDFA,#FEFCF8);border-left:4px solid #14B8A6;border-radius:0 12px 12px 0;padding:24px 28px;margin:28px 0}
@@ -65,8 +130,16 @@
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:10px;font-family:"Inter",sans-serif;font-weight:600;font-size:0.95rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:all 0.2s}
 .btn-primary{background:linear-gradient(135deg,#0D9488,#14B8A6);color:#fff;box-shadow:0 8px 20px rgba(13,148,136,0.35)}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(13,148,136,0.5)}
+
 @media (max-width:1100px){.cv-hero{padding:44px 30px 36px}.cv-hero h1{font-size:2rem}.cv-metrics{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:768px){.cv-hero{padding:36px 22px 30px}.cv-hero h1{font-size:1.7rem}.cv-exp-header{flex-direction:column;gap:6px}.cv-metrics{grid-template-columns:1fr}}
+@media (max-width:768px){
+  .cv-hero{padding:36px 22px 30px}
+  .cv-hero h1{font-size:1.7rem}
+  .cv-exp-header{flex-direction:column;gap:6px}
+  .cv-metrics{grid-template-columns:1fr}
+  .cv-cta-row{width:100%}
+  .btn-pdf{width:100%;justify-content:center}
+}
 </style>
 </head>
 <body>
@@ -126,6 +199,16 @@
           <a href="tel:+923136692066"><i class="fa-solid fa-phone"></i> +92-313-6692066</a>
           <a href="https://linkedin.com/in/kamboh6692" target="_blank"><i class="fa-brands fa-linkedin"></i> /in/kamboh6692</a>
           <a href="https://kamboh6692.github.io" target="_blank"><i class="fa-solid fa-globe"></i> kamboh6692.github.io</a>
+        </div>
+
+        <div class="cv-cta-row">
+          <a href="cv-print.html" target="_blank" class="btn-pdf btn-pdf-primary">
+            <i class="fa-solid fa-print"></i> Download PDF
+            <span class="pdf-badge">A4</span>
+          </a>
+          <a href="contact.html" class="btn-pdf btn-pdf-secondary">
+            <i class="fa-solid fa-paper-plane"></i> Hire Me
+          </a>
         </div>
       </div>
     </section>
