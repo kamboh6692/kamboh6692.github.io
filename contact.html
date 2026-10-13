@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Muhammad Arif Kamboh | Full-Stack Digital Growth Studio</title>
+<meta name="description" content="Get in touch with Muhammad Arif Kamboh — open to full-time roles, freelance projects, and long-term contracts worldwide.">
+<meta name="author" content="Muhammad Arif Kamboh">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="43Pnc2qy6EpNwdx1dHvTwEOs_uYkRiVSeJNWoKQPgRE" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+.breadcrumb{font-size:0.82rem;color:#94A3B8;margin-bottom:14px;font-family:"Montserrat",sans-serif;font-weight:500}
+.breadcrumb a{color:#0D9488;text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+.breadcrumb span{margin:0 8px;color:#94A3B8}
+.page-hero{padding:60px 50px 40px;background:linear-gradient(135deg,#0A1628 0%,#1E1B4B 50%,#164E63 100%);color:#fff;position:relative;overflow:hidden}
+.page-hero::before{content:"";position:absolute;top:-100px;right:-80px;width:380px;height:380px;border:40px solid rgba(20,184,166,0.10);border-radius:50%;pointer-events:none}
+.page-hero::after{content:"";position:absolute;bottom:-140px;left:-80px;width:300px;height:300px;border:32px solid rgba(212,175,55,0.08);border-radius:50%;pointer-events:none}
+.page-hero-inner{position:relative;z-index:2;max-width:900px}
+.page-hero .kicker{font-family:"Montserrat",sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:#5EEAD4;margin-bottom:12px}
+.page-hero h1{font-family:"Fraunces",Georgia,serif;font-size:2.5rem;font-weight:700;line-height:1.1;letter-spacing:-0.5px;margin-bottom:16px;color:#fff}
+.page-hero h1 span{background:linear-gradient(90deg,#D4AF37,#14B8A6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.page-hero p{font-size:1.05rem;color:#CBD5E1;line-height:1.7;max-width:720px}
+.section-title{font-family:"Fraunces",Georgia,serif;font-size:1.85rem;font-weight:600;color:#0A1628;margin-bottom:14px;letter-spacing:-0.3px;display:flex;align-items:center;gap:14px}
+.section-title i{color:#0D9488;font-size:1.5rem}
+.section-title::after{content:"";flex:1;height:1.5px;background:#E2E8F0;margin-left:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:10px;font-family:"Inter",sans-serif;font-weight:600;font-size:0.95rem;text-decoration:none;transition:all 0.2s;border:2px solid transparent;cursor:pointer}
+.btn-primary{background:linear-gradient(135deg,#0D9488,#14B8A6);color:#fff;box-shadow:0 8px 20px rgba(13,148,136,0.35);border:none}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(13,148,136,0.5)}
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px}
+.contact-card{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid #F1F5F9;border-radius:14px;padding:20px 22px;text-decoration:none;color:inherit;transition:all 0.3s;box-shadow:0 4px 12px rgba(15,23,42,0.04)}
+.contact-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(15,23,42,0.10);border-color:#14B8A6}
+.contact-card i{font-size:1.3rem;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#0D9488,#1E40AF);color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-label{font-family:"Montserrat",sans-serif;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#475569;margin-bottom:3px}
+.contact-value{color:#0A1628;font-weight:600;font-size:0.92rem;word-break:break-word}
+.contact-form{background:#fff;border:1px solid #F1F5F9;border-radius:16px;padding:32px 30px;box-shadow:0 4px 12px rgba(15,23,42,0.04);margin-top:24px}
+.contact-form h3{font-family:"Fraunces",Georgia,serif;font-size:1.3rem;color:#0A1628;margin-bottom:20px}
+.form-group{margin-bottom:18px}
+.form-group label{display:block;font-family:"Montserrat",sans-serif;font-size:0.78rem;font-weight:700;color:#0A1628;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:12px 14px;border:1.5px solid #E2E8F0;border-radius:10px;font-family:"Inter",sans-serif;font-size:0.95rem;color:#0A1628;background:#fff;transition:border-color 0.2s;box-sizing:border-box}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:#14B8A6;box-shadow:0 0 0 3px rgba(20,184,166,0.12)}
+.form-group textarea{resize:vertical;min-height:120px;font-family:"Inter",sans-serif}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.availability-box{background:linear-gradient(135deg,#F0FDFA,#FEFCF8);border-left:4px solid #14B8A6;border-radius:0 12px 12px 0;padding:24px 28px;margin-top:36px}
+.availability-box h3{font-family:"Montserrat",sans-serif;font-size:0.95rem;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;color:#0D9488;margin-bottom:14px}
+.availability-box p{color:#0A1628;font-size:0.95rem;line-height:1.7;margin-bottom:8px}
+.availability-box strong{color:#0A1628;font-weight:700}
+@media (max-width:1100px){.page-hero{padding:50px 30px 34px}.page-hero h1{font-size:2rem}.contact-grid{grid-template-columns:1fr}}
+@media (max-width:768px){.page-hero{padding:44px 22px 30px}.page-hero h1{font-size:1.8rem}.form-row{grid-template-columns:1fr}.contact-form{padding:24px 22px}}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <div class="profile-block">
+        <div class="profile-photo"><img src="photo.jpg" alt="Muhammad Arif Kamboh" onerror="this.parentNode.innerHTML='<span class=\'photo-initials\'>MAK</span>'"></div>
+        <h1 class="profile-name">Muhammad Arif Kamboh</h1>
+        <p class="profile-title">Full-Stack Digital Growth Studio</p>
+        <p class="profile-subtitle">SEO &amp; AI Search Specialist</p>
+      </div>
+      <div class="sidebar-contact">
+        <a href="mailto:kamboh6692@yahoo.com"><i class="fa-solid fa-envelope"></i><span>kamboh6692@yahoo.com</span></a>
+        <a href="tel:+923136692066"><i class="fa-solid fa-phone"></i><span>+92-313-6692066</span></a>
+        <a href="https://wa.me/923014491563" target="_blank"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+        <a href="https://linkedin.com/in/kamboh6692" target="_blank"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+        <span class="contact-loc"><i class="fa-solid fa-location-dot"></i><span>Kassowal, Punjab, PK</span></span>
+      </div>
+      <nav class="sidebar-nav">
+        <h4>Agency</h4>
+        <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+        <a href="contact.html" style="color:#5EEAD4"><i class="fa-solid fa-paper-plane"></i>Contact</a>
+        <h4 style="margin-top:18px">Services</h4>
+        <a href="services.html"><i class="fa-solid fa-handshake"></i>All Services</a>
+        <a href="service-digital-marketing.html"><i class="fa-solid fa-chart-line"></i>Digital Marketing</a>
+        <a href="service-social-media.html"><i class="fa-solid fa-share-nodes"></i>Social Media</a>
+        <a href="service-paid-ads.html"><i class="fa-solid fa-bullhorn"></i>Paid Ads</a>
+        <a href="service-seo.html"><i class="fa-solid fa-magnifying-glass"></i>SEO &amp; SEM</a>
+        <a href="service-email-marketing.html"><i class="fa-solid fa-envelope"></i>Email Marketing</a>
+        <a href="service-analytics-cro.html"><i class="fa-solid fa-chart-simple"></i>Analytics &amp; CRO</a>
+        <a href="service-programmatic-dsp.html"><i class="fa-solid fa-diagram-project"></i>Programmatic &amp; DSP</a>
+        <a href="service-marketing-strategy.html"><i class="fa-solid fa-compass"></i>Marketing Strategy</a>
+        <h4 style="margin-top:18px">AI Search 2030</h4>
+        <a href="ai-search.html"><i class="fa-solid fa-robot"></i>AI Search Hub</a>
+        <a href="aeo.html"><i class="fa-solid fa-comments"></i>AEO</a>
+        <a href="geo.html"><i class="fa-solid fa-wand-magic-sparkles"></i>GEO</a>
+        <a href="aio.html"><i class="fa-solid fa-microchip"></i>AIO</a>
+        <a href="gxo.html"><i class="fa-solid fa-brain"></i>GXO</a>
+        <h4 style="margin-top:18px">Work</h4>
+        <a href="case-studies.html"><i class="fa-solid fa-folder-open"></i>Case Studies</a>
+        <a href="cv.html"><i class="fa-solid fa-file-lines"></i>View CV</a>
+      </nav>
+      <div class="sidebar-langs"><h4>Languages</h4><div class="lang-pills"><span>Urdu</span><span>Hindi</span><span>Punjabi</span><span>English</span><span>Arabic (Basic)</span></div></div>
+      <div class="sidebar-avail"><h4>Availability</h4><p><strong>Status:</strong> Full-time freelance, immediate</p><p><strong>Mode:</strong> Remote · On-site · Hybrid</p><p><strong>Relocation:</strong> Willing for right role</p><p><strong>Engagement:</strong> Project · Retainer · Long-term</p></div>
+    </div>
+  </aside>
+  <main class="main">
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <p class="kicker">Let's Connect</p>
+        <h1>Get in <span>Touch</span></h1>
+        <p>Open to full-time roles, freelance projects, and long-term contracts worldwide. I typically respond within 24 hours.</p>
+      </div>
+    </section>
+    <section class="section">
+      <p class="breadcrumb"><a href="index.html">Home</a><span>›</span>Contact</p>
+      <h2 class="section-title"><i class="fa-solid fa-address-book"></i>Direct Contact</h2>
+      <div class="contact-grid">
+        <a href="mailto:kamboh6692@yahoo.com" class="contact-card"><i class="fa-solid fa-envelope"></i><div><div class="contact-label">Email</div><div class="contact-value">kamboh6692@yahoo.com</div></div></a>
+        <a href="tel:+923136692066" class="contact-card"><i class="fa-solid fa-phone"></i><div><div class="contact-label">Phone</div><div class="contact-value">+92-313-6692066</div></div></a>
+        <a href="https://wa.me/923014491563" target="_blank" class="contact-card"><i class="fa-brands fa-whatsapp"></i><div><div class="contact-label">WhatsApp</div><div class="contact-value">+92-301-4491563</div></div></a>
+        <a href="https://linkedin.com/in/kamboh6692" target="_blank" class="contact-card"><i class="fa-brands fa-linkedin"></i><div><div class="contact-label">LinkedIn</div><div class="contact-value">/in/kamboh6692</div></div></a>
+      </div>
+
+      <h2 class="section-title" style="margin-top:48px"><i class="fa-solid fa-paper-plane"></i>Send a Message</h2>
+      <p style="color:#475569;font-size:0.95rem;line-height:1.7;margin-bottom:8px;">Replace the form action below with your Formspree endpoint when ready. Meanwhile, direct email works too.</p>
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <h3>Project or Role Inquiry</h3>
+        <div class="form-row">
+          <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="John Doe"></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="you@company.com"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="company">Company (Optional)</label><input type="text" id="company" name="company" placeholder="Your company"></div>
+          <div class="form-group"><label for="type">Inquiry Type</label>
+            <select id="type" name="type">
+              <option>Full-time role</option>
+              <option>Freelance project</option>
+              <option>Consulting</option>
+              <option>Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" required placeholder="Tell me about your goals, industry, and what you need..."></textarea></div>
+        <button type="submit" class="btn btn-primary" style="border:none;cursor:pointer;"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+      </form>
+
+      <div class="availability-box">
+        <h3><i class="fa-solid fa-circle-check"></i> Availability</h3>
+        <p><strong>Status:</strong> Full-time freelance, immediate start</p>
+        <p><strong>Mode:</strong> Remote · On-site · Hybrid</p>
+        <p><strong>Relocation:</strong> Willing for the right role</p>
+        <p><strong>Engagement:</strong> Project · Retainer · Long-term contract</p>
+        <p><strong>Time Zones:</strong> US · UK · EU · Gulf · Australia · South Asia</p>
+      </div>
+    </section>
+    <footer class="footer"><p>&copy; 2026 Muhammad Arif Kamboh &middot; Full-Stack Digital Growth Studio</p><p>Kassowal, Punjab, Pakistan &middot; Available Worldwide</p></footer>
+  </main>
+</div>
+</body>
+</html>
